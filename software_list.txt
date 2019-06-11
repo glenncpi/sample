@@ -1,0 +1,12 @@
+Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
+Enable-RemoteDesktop
+
+choco install -y jdk8
+
+choco install -y tomcat
+
+choco install -y eclipse
+
+choco install -y firefox
+
+sc start Tomcat8
